@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <% include ../partials/head %>
+</head>
+<body class="container">
+  <header>
+    <% include ../partials/header %>
+  </header>
+  <main>
+    <div class="row">
+      <canvas class="center-block" width="640" height="480" id="canva" style="border:1px solid #000000;"></canvas>
+    </div>
+    <div class="row inputs">
+      <form class="form-inline text-center">
+        <div class="form-group">
+          <label for="object_name">Tên vật:</label>
+          <input type="text" class="form-control" id="object_name" placeholder="Tên vật">
+        </div>
+        <div class="form-group">
+          <label for="relay">Chọn thứ tự relay:</label>
+          <select class="form-control" id="relay">
+             <option>1</option>
+             <option>2</option>
+             <option>3</option>
+             <option>4</option>
+           </select>
+        </div>
+        <button class="btn btn-primary" id="save" type="button">Ghi nhớ</button>
+      </form>
+    </div>
+
+  </main>
+  <footer>
+    <% include ../partials/footer %>
+  </footer>
+  <% include ../partials/load_js %>
+</body>
+</html>
